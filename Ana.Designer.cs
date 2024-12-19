@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ıdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kitapAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yazarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yayineviDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,9 +53,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.booksTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSetTableAdapters.BooksTableAdapter();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -65,14 +62,22 @@
             this.kütüphaneOtomasyonuDataSet2 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet2();
             this.bookLoansBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookLoansTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet2TableAdapters.BookLoansTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button4 = new System.Windows.Forms.Button();
+            this.kütüphaneOtomasyonuDataSet17 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet17();
+            this.bookssBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bookssTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet17TableAdapters.BookssTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookLoansBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookssBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -80,7 +85,6 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ıdDataGridViewTextBoxColumn,
             this.kitapAdiDataGridViewTextBoxColumn,
             this.yazarDataGridViewTextBoxColumn,
             this.yayineviDataGridViewTextBoxColumn,
@@ -95,15 +99,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(475, 360);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ıdDataGridViewTextBoxColumn
-            // 
-            this.ıdDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.ıdDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.ıdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ıdDataGridViewTextBoxColumn.Name = "ıdDataGridViewTextBoxColumn";
-            this.ıdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ıdDataGridViewTextBoxColumn.Width = 125;
             // 
             // kitapAdiDataGridViewTextBoxColumn
             // 
@@ -290,17 +285,6 @@
             this.textBox1.Size = new System.Drawing.Size(158, 27);
             this.textBox1.TabIndex = 12;
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(0, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(297, 49);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Al";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -311,17 +295,6 @@
             this.button3.Text = "Arama";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::kütüphane_otomasyonu.Properties.Resources.kk;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // booksTableAdapter
             // 
@@ -373,16 +346,61 @@
             // 
             this.bookLoansTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::kütüphane_otomasyonu.Properties.Resources.kk;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(0, 396);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 42);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "Geri";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // kütüphaneOtomasyonuDataSet17
+            // 
+            this.kütüphaneOtomasyonuDataSet17.DataSetName = "kütüphaneOtomasyonuDataSet17";
+            this.kütüphaneOtomasyonuDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bookssBindingSource
+            // 
+            this.bookssBindingSource.DataMember = "Bookss";
+            this.bookssBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet17;
+            // 
+            // bookssTableAdapter
+            // 
+            this.bookssTableAdapter.ClearBeforeFill = true;
+            // 
             // Ana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -405,9 +423,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookLoansBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookssBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,7 +448,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private kütüphaneOtomasyonuDataSet kütüphaneOtomasyonuDataSet;
@@ -436,7 +455,6 @@
         private kütüphaneOtomasyonuDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ıdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kitapAdiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yazarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yayineviDataGridViewTextBoxColumn;
@@ -451,5 +469,10 @@
         private kütüphaneOtomasyonuDataSet2 kütüphaneOtomasyonuDataSet2;
         private System.Windows.Forms.BindingSource bookLoansBindingSource;
         private kütüphaneOtomasyonuDataSet2TableAdapters.BookLoansTableAdapter bookLoansTableAdapter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button button4;
+        private kütüphaneOtomasyonuDataSet17 kütüphaneOtomasyonuDataSet17;
+        private System.Windows.Forms.BindingSource bookssBindingSource;
+        private kütüphaneOtomasyonuDataSet17TableAdapters.BookssTableAdapter bookssTableAdapter;
     }
 }

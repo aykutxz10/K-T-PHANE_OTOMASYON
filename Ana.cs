@@ -125,58 +125,16 @@ namespace kütüphane_otomasyonu
         }
         private void Ana_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'kütüphaneOtomasyonuDataSet17.Bookss' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            
             // TODO: Bu kod satırı 'kütüphaneOtomasyonuDataSet2.BookLoans' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.bookLoansTableAdapter.Fill(this.kütüphaneOtomasyonuDataSet2.BookLoans);
             // TODO: Bu kod satırı 'kütüphaneOtomasyonuDataSet1.Books' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.booksTableAdapter1.Fill(this.kütüphaneOtomasyonuDataSet1.Books);
+           
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
 
-
-            // DataGridView'i temizle
-
-
-            try
-            {
-
-                // Veritabanı bağlantısını oluştur
-                using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-AQ2MBA7\SQLEXPRESS;Initial Catalog=kütüphaneOtomasyonu;Integrated Security=True;"))
-                {
-                    connection.Open();
-
-                    // Kitapları sorgula
-                    string query = "SELECT Id, KitapAdi, Yazar, Yayinevi, YayimTarihi, SayfaSayisi, StokMiktari FROM Books";
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            // DataGridView'e verileri ekle
-                            while (reader.Read())
-                            {
-                                int id = reader.GetInt32(0); // Id
-                                string kitapAdi = reader.GetString(1); // Kitap Adı
-                                string yazar = reader.GetString(2); // Yazar
-                                string yayinevi = reader.GetString(3); // Yayinevi
-                                string YayimTarihi = reader.GetString(4); // Yayım Tarihi
-                                int SayfaSayisi = reader.GetInt32(5); // Sayfa Sayısı
-                                int StokMiktari = reader.GetInt32(6); // Stok Miktarı
-
-                                // DataGridView'e yeni satır ekle
-                                dataGridView1.Rows.Add(id, kitapAdi, yazar, yayinevi, YayimTarihi, SayfaSayisi, StokMiktari);
-
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Bir hata oluştu: " + ex.Message);
-            }
-        }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -213,6 +171,48 @@ namespace kütüphane_otomasyonu
             catch (Exception ex)
             {
                 MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            kütüphane kütüphaneform = new kütüphane();
+            kütüphaneform.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Arama metni değiştikçe veritabanından veri çekiyoruz
+            string searchText = textBox1.Text; // TextBox9'dan alınan arama metni
+            AramaYap(searchText);
+        }
+        private void AramaYap(string searchText)
+        {
+            string isim = textBox1.Text;
+
+            try
+            {
+                // SQL sorgusunu oluşturuyoruz
+                string sorgu = "SELECT * FROM Books WHERE KitapAdi LIKE @KitapAdi";
+                SqlCommand command = new SqlCommand(sorgu, bağlantı);
+                command.Parameters.AddWithValue("@KitapAdi", "%" + searchText + "%"); // LIKE operatörü ile esnek arama
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable(); // Veritabanından alınan veriyi tutacak DataTable
+                dataAdapter.Fill(dt); // DataTable'a veriyi yüklüyoruz
+
+                // DataGridView'e sonuçları bağlıyoruz
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message); // Hata mesajı gösteriyoruz
             }
         }
     }

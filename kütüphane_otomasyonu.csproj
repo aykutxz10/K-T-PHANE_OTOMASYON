@@ -58,11 +58,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="kitapal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapal.Designer.cs">
+      <DependentUpon>kitapal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplık.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplık.Designer.cs">
+      <DependentUpon>kitaplık.cs</DependentUpon>
+    </Compile>
     <Compile Include="KitapOdunc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KitapOdunc.Designer.cs">
       <DependentUpon>KitapOdunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kütüphane.Designer.cs">
+      <DependentUpon>kütüphane.cs</DependentUpon>
     </Compile>
     <Compile Include="kütüphaneOtomasyonuDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -73,6 +91,56 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kütüphaneOtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet19.xsd</DependentUpon>
     </Compile>
     <Compile Include="kütüphaneOtomasyonuDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -89,6 +157,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>kütüphaneOtomasyonuDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneOtomasyonuDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneOtomasyonuDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ana.resx">
@@ -97,8 +190,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kitapal.resx">
+      <DependentUpon>kitapal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplık.resx">
+      <DependentUpon>kitaplık.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KitapOdunc.resx">
       <DependentUpon>KitapOdunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kütüphane.resx">
+      <DependentUpon>kütüphane.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +233,116 @@
     </None>
     <None Include="kütüphaneOtomasyonuDataSet1.xss">
       <DependentUpon>kütüphaneOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet10.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet10.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet11.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet11.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet12.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet12.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet13.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet13.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet14.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet14.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet15.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet15.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet16.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet16.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet17.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet17.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet18.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet18.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet19.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet19.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet19.xsd</DependentUpon>
     </None>
     <None Include="kütüphaneOtomasyonuDataSet2.xsc">
       <DependentUpon>kütüphaneOtomasyonuDataSet2.xsd</DependentUpon>
@@ -165,6 +377,61 @@
     <None Include="kütüphaneOtomasyonuDataSet4.xss">
       <DependentUpon>kütüphaneOtomasyonuDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="kütüphaneOtomasyonuDataSet5.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet5.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet6.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet6.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet7.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet7.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet8.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet8.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet9.xsc">
+      <DependentUpon>kütüphaneOtomasyonuDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneOtomasyonuDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneOtomasyonuDataSet9.xss">
+      <DependentUpon>kütüphaneOtomasyonuDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -186,6 +453,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kkkk.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\küt.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

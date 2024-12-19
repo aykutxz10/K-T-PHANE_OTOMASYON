@@ -30,24 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kütüphaneOtomasyonuDataSet3 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet3();
-            this.bookLoansBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookLoansTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet3TableAdapters.BookLoansTableAdapter();
             this.ıdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kullaniciIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kitapIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alisTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teslimTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.geriVerildiDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.kütüphaneOtomasyonuDataSet4 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet4();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.booksTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet4TableAdapters.BooksTableAdapter();
-            this.ıdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookLoansBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kütüphaneOtomasyonuDataSet3 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet3();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.kitapAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yazarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yayineviDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,14 +47,27 @@
             this.sayfaSayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stokMiktariDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kütüphaneOtomasyonuDataSet4 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet4();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bookLoansTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet3TableAdapters.BookLoansTableAdapter();
+            this.booksTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet4TableAdapters.BooksTableAdapter();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.kütüphaneOtomasyonuDataSet16 = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet16();
+            this.bookssBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bookssTableAdapter = new kütüphane_otomasyonu.kütüphaneOtomasyonuDataSet16TableAdapters.BookssTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookLoansBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookssBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -83,72 +88,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(524, 262);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ıdDataGridViewTextBoxColumn1,
-            this.kitapAdiDataGridViewTextBoxColumn,
-            this.yazarDataGridViewTextBoxColumn,
-            this.yayineviDataGridViewTextBoxColumn,
-            this.yayimTarihiDataGridViewTextBoxColumn,
-            this.sayfaSayisiDataGridViewTextBoxColumn,
-            this.stokMiktariDataGridViewTextBoxColumn,
-            this.aciklamaDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.booksBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(776, 167);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(50, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 51);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "GERİ VER";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(28, 233);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "KİTABI GERİ VER";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::kütüphane_otomasyonu.Properties.Resources.kkkk;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // kütüphaneOtomasyonuDataSet3
-            // 
-            this.kütüphaneOtomasyonuDataSet3.DataSetName = "kütüphaneOtomasyonuDataSet3";
-            this.kütüphaneOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookLoansBindingSource
-            // 
-            this.bookLoansBindingSource.DataMember = "BookLoans";
-            this.bookLoansBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet3;
-            // 
-            // bookLoansTableAdapter
-            // 
-            this.bookLoansTableAdapter.ClearBeforeFill = true;
             // 
             // ıdDataGridViewTextBoxColumn
             // 
@@ -199,28 +138,35 @@
             this.geriVerildiDataGridViewCheckBoxColumn.Name = "geriVerildiDataGridViewCheckBoxColumn";
             this.geriVerildiDataGridViewCheckBoxColumn.Width = 125;
             // 
-            // kütüphaneOtomasyonuDataSet4
+            // bookLoansBindingSource
             // 
-            this.kütüphaneOtomasyonuDataSet4.DataSetName = "kütüphaneOtomasyonuDataSet4";
-            this.kütüphaneOtomasyonuDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bookLoansBindingSource.DataMember = "BookLoans";
+            this.bookLoansBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet3;
             // 
-            // booksBindingSource
+            // kütüphaneOtomasyonuDataSet3
             // 
-            this.booksBindingSource.DataMember = "Books";
-            this.booksBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet4;
+            this.kütüphaneOtomasyonuDataSet3.DataSetName = "kütüphaneOtomasyonuDataSet3";
+            this.kütüphaneOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // booksTableAdapter
+            // dataGridView2
             // 
-            this.booksTableAdapter.ClearBeforeFill = true;
-            // 
-            // ıdDataGridViewTextBoxColumn1
-            // 
-            this.ıdDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.ıdDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.ıdDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.ıdDataGridViewTextBoxColumn1.Name = "ıdDataGridViewTextBoxColumn1";
-            this.ıdDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.ıdDataGridViewTextBoxColumn1.Width = 125;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kitapAdiDataGridViewTextBoxColumn,
+            this.yazarDataGridViewTextBoxColumn,
+            this.yayineviDataGridViewTextBoxColumn,
+            this.yayimTarihiDataGridViewTextBoxColumn,
+            this.sayfaSayisiDataGridViewTextBoxColumn,
+            this.stokMiktariDataGridViewTextBoxColumn,
+            this.aciklamaDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.booksBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(776, 167);
+            this.dataGridView2.TabIndex = 1;
             // 
             // kitapAdiDataGridViewTextBoxColumn
             // 
@@ -278,6 +224,56 @@
             this.aciklamaDataGridViewTextBoxColumn.Name = "aciklamaDataGridViewTextBoxColumn";
             this.aciklamaDataGridViewTextBoxColumn.Width = 125;
             // 
+            // booksBindingSource
+            // 
+            this.booksBindingSource.DataMember = "Books";
+            this.booksBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet4;
+            // 
+            // kütüphaneOtomasyonuDataSet4
+            // 
+            this.kütüphaneOtomasyonuDataSet4.DataSetName = "kütüphaneOtomasyonuDataSet4";
+            this.kütüphaneOtomasyonuDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(50, 311);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 51);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "GERİ VER";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(28, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 31);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "KİTABI GERİ VER";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::kütüphane_otomasyonu.Properties.Resources.kkkk;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bookLoansTableAdapter
+            // 
+            this.bookLoansTableAdapter.ClearBeforeFill = true;
+            // 
+            // booksTableAdapter
+            // 
+            this.booksTableAdapter.ClearBeforeFill = true;
+            // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -286,11 +282,39 @@
             this.textBox7.Size = new System.Drawing.Size(246, 38);
             this.textBox7.TabIndex = 23;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(12, 397);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 41);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "GERİ ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // kütüphaneOtomasyonuDataSet16
+            // 
+            this.kütüphaneOtomasyonuDataSet16.DataSetName = "kütüphaneOtomasyonuDataSet16";
+            this.kütüphaneOtomasyonuDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bookssBindingSource
+            // 
+            this.bookssBindingSource.DataMember = "Bookss";
+            this.bookssBindingSource.DataSource = this.kütüphaneOtomasyonuDataSet16;
+            // 
+            // bookssTableAdapter
+            // 
+            this.bookssTableAdapter.ClearBeforeFill = true;
+            // 
             // KitapOdunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -301,12 +325,14 @@
             this.Text = "KitapOdunc";
             this.Load += new System.EventHandler(this.KitapOdunc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookLoansBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kütüphaneOtomasyonuDataSet16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookssBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,7 +358,6 @@
         private kütüphaneOtomasyonuDataSet4 kütüphaneOtomasyonuDataSet4;
         private System.Windows.Forms.BindingSource booksBindingSource;
         private kütüphaneOtomasyonuDataSet4TableAdapters.BooksTableAdapter booksTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ıdDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kitapAdiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yazarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yayineviDataGridViewTextBoxColumn;
@@ -341,5 +366,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stokMiktariDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aciklamaDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button2;
+        private kütüphaneOtomasyonuDataSet16 kütüphaneOtomasyonuDataSet16;
+        private System.Windows.Forms.BindingSource bookssBindingSource;
+        private kütüphaneOtomasyonuDataSet16TableAdapters.BookssTableAdapter bookssTableAdapter;
     }
 }

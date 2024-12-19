@@ -29,7 +29,7 @@ namespace kütüphane_otomasyonu
 
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("kullanıcı Adı Gİr");
+                MessageBox.Show("kullanıcı Adınızı Gİrin");
                 return;
 
 
@@ -56,8 +56,8 @@ namespace kütüphane_otomasyonu
                 {
                     genel_bilgi = "Hoşgeldin" + oku["KullaniciAdi"].ToString();
                     MessageBox.Show(genel_bilgi);
-                    Ana Anaform = new Ana();
-                    Anaform.Show();
+                    kütüphane kütüphaneform = new kütüphane();
+                    kütüphaneform.Show();
                     this.Hide();
 
                 }
@@ -87,6 +87,10 @@ namespace kütüphane_otomasyonu
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
